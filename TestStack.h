@@ -129,8 +129,7 @@ int top() {
         exit(1);
     }
     int curr = myMap->currIns->data;
-//    printf("Peeked %s\n",head->data);
-//    char* curr = head->data;
+    printf("Peeked %s\n",head->data);
     lock.l_type = F_UNLCK;
     if(fcntl(fd,F_SETLKW,&lock) == -1){
         printf("Problem");
